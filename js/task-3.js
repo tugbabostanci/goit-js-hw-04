@@ -1,18 +1,12 @@
 'use strict';
 
 
+// nesne metodu
+const profile = {
+	username: "Jacob",
+  playTime: 300,
+};
 
-function  filterArray(numbers, value) {
-  const emptArray = [];
-
-  for (const number of numbers) {
-    if (number > value) {
-      emptArray.push(number);
-    }
-  }
-
-  return emptArray;
-}
 
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
