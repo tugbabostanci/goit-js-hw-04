@@ -3,24 +3,23 @@
 
 // nesne metodu
 
-const obj = {
-	profile = [username: "Jacob", playTime: 300,],
+const profile = {
+  username: "Jacob",
+  playTime: 300,
 
   changeUsername(newName) {
-    (if newName != this.username){
-       this.username = newName;
-    }
+    this.username = newName;
+  },
+
+  updatePlayTime(hours) {
+    this.playTime += hours;
   },
   
-  updatePlayTime(hours){
-      this.playTime += hours;
-
-  },
-
   getInfo() {
-    return this.profile;
-  }
+    return `${this.username} has ${this.playTime} active hours!`;
+  },
 };
+
 
 
 
